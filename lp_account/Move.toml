@@ -1,0 +1,12 @@
+[package]
+name = 'lp_init'
+version = '1.0.0'
+upgrade_policy = "immutable"
+
+[addresses]
+admin = "_"
+
+[dependencies.AptosFramework]
+git = "https://github.com/aptos-labs/aptos-core.git"
+rev = "mainnet"
+subdir = "aptos-move/framework/aptos-framework"

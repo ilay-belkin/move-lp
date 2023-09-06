@@ -1,0 +1,47 @@
+[package]
+name = "lp"
+version = "0.0.0"
+
+[addresses]
+admin = "_"
+token = "_"
+staking = "_"
+lp = "_"
+lp_coin = "_"
+lp_res_account = "_"
+lp_init = "_"
+
+lp_provider = "0xcafe"
+lp_provider_2 = "0xcafe2"
+lp_provider_3 = "0xcafe3"
+
+relayer = "0x4"
+lp_test_user = "0xcafe2"
+coin_admin="0x5"
+std = "0x1"
+aptos_std = "0x1"
+aptos_framework = "0x1"
+
+[dependencies.lp_coin]
+local = "lp_coin"
+
+[dependencies.lp_init]
+local = "lp_account"
+
+[dependencies.staking]
+local = "../staking"
+
+[dependencies.MoveStdlib]
+git = 'https://github.com/aptos-labs/aptos-core.git'
+rev = 'main'
+subdir = 'aptos-move/framework/move-stdlib'
+
+[dependencies.AptosStdlib]
+git = 'https://github.com/aptos-labs/aptos-core.git'
+rev = 'main'
+subdir = 'aptos-move/framework/aptos-stdlib'
+
+[dependencies.AptosFramework]
+git = 'https://github.com/aptos-labs/aptos-core.git'
+rev = 'main'
+subdir = 'aptos-move/framework/aptos-framework'
